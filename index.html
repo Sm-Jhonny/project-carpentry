@@ -6,6 +6,41 @@
     <title>Carpintaria Pau Brasil</title>
     <link rel="shortcut icon" href="img/favicon.png">
     <meta name="description" content="Carpintaria Pau Brasil — móveis artesanais feitos à mão, com tradição, técnica e amor pela madeira.">
+
+    <style>
+        body{
+            padding: 10px;
+            background-color: #EAD7C3;
+            font-family: Georgia, 'Times New Roman', Times, serif;">
+        }
+        header{
+            background-color:#5C4033;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
+            h1{
+                color: white;
+            }
+        }
+        .conteudo{
+            display: flex;
+            flex-direction: row;
+        }
+        .conteudo2{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        img{
+            max-width: 50%;
+            height: auto;
+        }
+        .conteudo-text, .conteudo-img{
+            flex: 1;
+        }
+    </style>
+
+
 </head>
 <body>
 
@@ -19,20 +54,34 @@
 
 
 
-    <main id="portfolio">
-
-        <h2>Transformando madeira em arte sob medida</h2>
-        <p>Projetos únicos, feitos com precisão artesanal e acabamento de excelência.</p>
-        <img src="img/mobilhia.png" alt="Foto de um móvel de madeira nobre com iluminação lateral suave (tons quentes, rústicos).">
-
-        <h2>Mais do que marcenaria, é dedicação em cada detalhe.</h2>
-        <p>Com anos de experiência, Sr. Antônio Duarte entrega peças personalizadas que unem funcionalidade, beleza e durabilidade.</p>
-        <img src="img/hand-working.png" alt="Foto de mãos trabalhando na madeira, mostrando o processo artesanal.">
-
-        <h2>Móveis planejados que combinam com o seu estilo de vida.</h2>
-        <p>Veja alguns dos projetos criados sob medida para cada cliente.</p>
-        <img src="img/mobilhia.png" alt="Três móveis prontos (sala, cozinha, quarto) em ambiente iluminado e acolhedor.">
-
+    <main>
+        <section class="conteudo">
+            <div class="conteudo-text">
+                <h2>Transformando madeira em arte sob medida</h2>
+                <p>Projetos únicos, feitos com precisão artesanal e acabamento de excelência.</p>
+            </div>
+            <div class="conteudo-img">
+                <img src="img/mobilha.png" alt="Foto de um móvel de madeira nobre com iluminação lateral suave (tons quentes, rústicos).">
+            </div>
+        </section>
+        <section class="conteudo2">
+            <div class="conteudo-text">
+                <h2>Mais do que marcenaria, é dedicação em cada detalhe.</h2>
+                <p>Com anos de experiência, Sr. Antônio Duarte entrega peças personalizadas que unem funcionalidade, beleza e durabilidade.</p>
+            </div>
+            <div class="conteudo-img">
+                <img src="img/hand-working.png" alt="Foto de mãos trabalhando na madeira, mostrando o processo artesanal.">
+            </div>
+        </section>
+        <section class="conteudo">
+            <div class="conteudo-text">
+                <h2>Móveis planejados que combinam com o seu estilo de vida.</h2>
+                <p>Veja alguns dos projetos criados sob medida para cada cliente.</p>
+            </div>
+            <div class="conteudo-img">
+                <img src="img/moveis.png" alt="Três móveis prontos (sala, cozinha, quarto) em ambiente iluminado e acolhedor.">
+            </div>
+        </section>
     </main>
 
 
