@@ -138,6 +138,25 @@
             font-size: smaller;
         }
 
+        .logoctt{
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            img{
+            height: 25px;
+            width: auto;
+            }
+            a{
+               text-decoration: none;
+               color: white;
+               font-size: 15px;
+               display: flex;
+               align-items: center;
+               gap: 5px;
+               padding: 0 10px 10px 10px;
+            }
+        }
+
 
 
         @media (max-width: 767px){
@@ -215,13 +234,12 @@
     </header>
 
     <nav>
-        <a href="#">Faça seu orçamento</a>
-        <a href="#">Projetos</a>
-        <a href="#">Historia</a>
-        <a href="#">Contatos</a>
+        <a href="#orcamento">Faça seu orçamento</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#historia">Historia</a>
     </nav>
 
-    <main>
+    <main id="projetos">
         <div class="gap">
             <section class="conteudo">
                 <div class="conteudo-text">
@@ -253,7 +271,7 @@
         </div>
     </main>
 
-    <article>
+    <article id="historia">
         <div class="divh2">
             <h2>Nossa Historia</h2>
         </div>
@@ -274,8 +292,12 @@
         </div>
     </article>
 
-    <footer>
-        <p>📍 Rua das Araucárias, nº 217 – Bairro Bela Vista, Serra Clara – Minas Gerais, Brasil</p>
+    <footer id="orcamento">
+         <p>📍 Rua das Araucárias, nº 217 – Bairro Bela Vista, Serra Clara – Minas Gerais, Brasil</p>
+        <div class="logoctt">
+            <a href="#"><img src="img/logozap.png" alt="logowhatsapp">Nosso Whatsapp</a>
+            <a href="#"><img src="img/logface.png" alt="logo/face">Facebook/MarcenariaPauBrasil</a>
+        </div>
     </footer>
 
 </body>
