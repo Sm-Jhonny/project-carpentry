@@ -8,27 +8,62 @@
     <meta name="description" content="Carpintaria Pau Brasil — móveis artesanais feitos à mão, com tradição, técnica e amor pela madeira.">
     <style>
         body{
-            background-color: #f8f9fa;
+            background-color: #FC440F;
             font-family: Georgia, 'Times New Roman', Times, serif;">
         }
         img{
             max-width: 100%;
             height: auto;
             }
+        .gap{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
         header{
+            padding: 10px;
+            background-color: #EAD7C3;
+            border-radius: 10px 10px 0 0;
+        }
+        nav{
+            background-color: #5c4033;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+            a{
+                padding: 10px 20px;
+                color: #EAD7C3;
+                text-decoration: none;
+                display: inline-block;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                transition: all 0.3sg ease;
+            }
+            a:hover{
+                background-color: #0000005c;
+                transform: scale(1.1);
+            }
+        }
+        main{
+            margin: 1rem 0;
+        }
+
+
+
+        @media(min-width: 767px){
+            header{
             img{
                 max-width: 100px;
                 width: auto;
             }
-            padding: 10px;
-            background-color:#5C4033;
-            border-radius: 10px;
-            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
             h1{
                 font-size: 2.5rem;
             margin-bottom: 20px;
-            color:#DBAA82;
+            color: #5c4033;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.425);
             }
+        }
         }
         .header{
             display: flex;
@@ -80,18 +115,18 @@
         }
         .divh2{
             background-color: #5C4033;
-            color: #DBAA82;
             font-size: 1.5rem;
             padding: 1px;
             text-align: center;
             border-radius: 10px 10px 0 0;
+            color: #EAD7C3;
         }
         .divp{
-            background-color: #DBAA82;
+            background-color: #EAD7C3;
             padding:10px;
             border-radius: 0 0 10px 10px;
             text-align: justify;
-            color:#5C4033;
+            color:#333;
             font-size: 1.2rem;
         }
         footer{
@@ -103,7 +138,23 @@
             font-size: smaller;
         }
 
+
+
         @media (max-width: 767px){
+            header{
+                img{
+                    max-width: 10%;
+                    width: auto;
+                }
+                h1{
+                    color: #5c4033;
+                    font-size: 2rem;
+                    text-shadow:0 0 3px rgba(0, 0, 0, 0.425);
+                }
+            }
+            nav{
+                text-align: center;
+            }
             .conteudo {
                 display: flex;
                 flex-direction: column;
@@ -129,12 +180,12 @@
                 background: #EAD7C3;
             }
             .conteudo-text h2 {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
                 margin-bottom: 20px;
                 color: #333;
             }
             .conteudo-text p {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 color: #556B2F;
                 max-width: 500px;
             }
@@ -158,55 +209,74 @@
 
     <header>
         <div class="header">
-            <img src="img/favicon.png" alt="icon">
             <h1>Carpintaria Pau Brasil</h1>
+            <img src="img/favicon.png" alt="icon">
         </div>
     </header>
+
+    <nav>
+        <a href="#">Faça seu orçamento</a>
+        <a href="#">Projetos</a>
+        <a href="#">Historia</a>
+        <a href="#">Contatos</a>
+    </nav>
+
     <main>
-        <section class="conteudo">
-            <div class="conteudo-text">
-                <h2>Transformando madeira em arte sob medida</h2>
-                <p>Projetos únicos, feitos com precisão artesanal e acabamento de excelência.</p>
-            </div>
-            <div class="conteudo-img">
-                <img src="img/mobilha.png" alt="Foto de um móvel de madeira nobre com iluminação lateral suave (tons quentes, rústicos).">
-            </div>
-        </section>
-        <section class="conteudo2">
-            <div class="conteudo-text">
-                <h2>Mais do que marcenaria, é dedicação em cada detalhe.</h2>
-                <p>Com anos de experiência, Sr. Antônio Duarte entrega peças personalizadas que unem funcionalidade, beleza e durabilidade.</p>
-            </div>
-            <div class="conteudo-img">
-                <img src="img/hand-working.png" alt="Foto de mãos trabalhando na madeira, mostrando o processo artesanal.">
-            </div>
-        </section>
-        <section class="conteudo">
-            <div class="conteudo-text">
-                <h2>Móveis planejados que combinam com o seu estilo de vida.</h2>
-                <p>Veja alguns dos projetos criados sob medida para cada cliente.</p>
-            </div>
-            <div class="conteudo-img">
-                <img src="img/moveis.png" alt="Três móveis prontos (sala, cozinha, quarto) em ambiente iluminado e acolhedor.">
-            </div>
-        </section>
+        <div class="gap">
+            <section class="conteudo">
+                <div class="conteudo-text">
+                    <h2>Transformando madeira em arte sob medida</h2>
+                    <p>Projetos únicos, feitos com precisão artesanal e acabamento de excelência.</p>
+                </div>
+                <div class="conteudo-img">
+                    <img src="img/mobilha.png" alt="Foto de um móvel de madeira nobre com iluminação lateral suave (tons quentes, rústicos).">
+                </div>
+            </section>
+            <section class="conteudo2">
+                <div class="conteudo-text">
+                    <h2>Mais do que marcenaria, é dedicação em cada detalhe.</h2>
+                    <p>Com anos de experiência, Sr. Antônio Duarte entrega peças personalizadas que unem funcionalidade, beleza e durabilidade.</p>
+                </div>
+                <div class="conteudo-img">
+                    <img src="img/hand-working.png" alt="Foto de mãos trabalhando na madeira, mostrando o processo artesanal.">
+                </div>
+            </section>
+            <section class="conteudo">
+                <div class="conteudo-text">
+                    <h2>Móveis planejados que combinam com o seu estilo de vida.</h2>
+                    <p>Veja alguns dos projetos criados sob medida para cada cliente.</p>
+                </div>
+                <div class="conteudo-img">
+                    <img src="img/moveis.png" alt="Três móveis prontos (sala, cozinha, quarto) em ambiente iluminado e acolhedor.">
+                </div>
+            </section>
+        </div>
     </main>
+
     <article>
         <div class="divh2">
             <h2>Nossa Historia</h2>
         </div>
         <div class="divp">
-            <p>No coração de uma pequena cidade do interior, cercada por mata nativa e o som constante das cigarras, nasceu a Carpintaria Pau Brasil — um sonho que tomou forma nas mãos firmes e visionárias de Antônio Duarte, um homem simples, mas com um talento raro para transformar madeira em arte.
-            Antônio começou jovem, ainda adolescente, observando o pai consertar móveis velhos na varanda de casa. Fascinado com o cheiro da madeira e o som do formão cortando o tronco, ele logo entendeu que cada pedaço de madeira guardava uma história — bastava saber escutar.
-            Com o passar dos anos, Antônio aperfeiçoou seu ofício. Criou mesas que uniam famílias, cadeiras que sustentaram gerações e portas que se abriram para novos começos. Em 1998, decidiu dar um nome ao seu trabalho: Pau Brasil, em homenagem à árvore que representa a força, a resistência e a beleza da nossa terra.
-            Desde então, a Carpintaria Pau Brasil mantém viva a tradição da marcenaria artesanal, unindo técnica, sensibilidade e amor em cada detalhe. Suas criações não são apenas móveis — são pedaços de histórias, feitos para durar e transmitir o calor humano que só o toque da madeira pode oferecer.
-            Hoje, a carpintaria se modernizou, mas sem perder sua essência. Cada peça continua sendo desenhada com o mesmo cuidado, seguindo a filosofia de seu fundador:
-            “A madeira não se domina — se compreende.”
-            A Pau Brasil é, acima de tudo, um símbolo de dedicação, paciência e arte. Uma empresa que nasceu da terra e que continua crescendo com as raízes firmes na tradição e o olhar voltado para o futuro.
+            <p>No coração de uma pequena cidade do interior, cercada por mata nativa e o som constante das cigarras, nasceu a Carpintaria Pau Brasil — um sonho que tomou forma nas mãos firmes e visionárias de Antônio Duarte, um homem simples, mas com um talento raro para transformar madeira em arte.</p>
+
+            <p>Antônio começou jovem, ainda adolescente, observando o pai consertar móveis velhos na varanda de casa. Fascinado com o cheiro da madeira e o som do formão cortando o tronco, ele logo entendeu que cada pedaço de madeira guardava uma história — bastava saber escutar.</p>
+
+            <p>Com o passar dos anos, Antônio aperfeiçoou seu ofício. Criou mesas que uniam famílias, cadeiras que sustentaram gerações e portas que se abriram para novos começos. Em 1998, decidiu dar um nome ao seu trabalho: Pau Brasil, em homenagem à árvore que representa a força, a resistência e a beleza da nossa terra.</p>
+
+            <p>Desde então, a Carpintaria Pau Brasil mantém viva a tradição da marcenaria artesanal, unindo técnica, sensibilidade e amor em cada detalhe. Suas criações não são apenas móveis — são pedaços de histórias, feitos para durar e transmitir o calor humano que só o toque da madeira pode oferecer.</p>
+
+            <p>Hoje, a carpintaria se modernizou, mas sem perder sua essência. Cada peça continua sendo desenhada com o mesmo cuidado, seguindo a filosofia de seu fundador:</p>
+
+            <p>“A madeira não se domina — se compreende.”</p>
+
+            <p>A Pau Brasil é, acima de tudo, um símbolo de dedicação, paciência e arte. Uma empresa que nasceu da terra e que continua crescendo com as raízes firmes na tradição e o olhar voltado para o futuro.</p>
         </div>
     </article>
+
     <footer>
         <p>📍 Rua das Araucárias, nº 217 – Bairro Bela Vista, Serra Clara – Minas Gerais, Brasil</p>
     </footer>
+
 </body>
 </html>
