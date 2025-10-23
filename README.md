@@ -1,5 +1,13 @@
 # Project Carpentry
 
+🏁 Status do projeto: Finalizado
+
+Este projeto marcou uma fase importante do meu aprendizado em desenvolvimento web. Foi criado com dedicação, estudo e paciência, e representa o início da minha jornada prática. Mesmo que simples, ele carrega esforço, erros, acertos e a vontade de evoluir.
+
+Decidi mantê-lo publicado como registro da minha trajetória e como lembrete de que todo progresso começa com um primeiro passo. Hoje encerro este projeto satisfeito com o resultado e pronto para os próximos desafios.
+
+
+
 ## 🇺🇸 English Version
 
 This project is for training!  
